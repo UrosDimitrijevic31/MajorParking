@@ -1,0 +1,16 @@
+export * from "./Administration/Administration";
+export * from "./Dashboard/Dashboard";
+export * from "./AddEmployee/AddEmployee";
+// export * from "./AddLocation/AddLocation";
+export * from "./Login/Login";
+export * from "./Inspection/Inspection";
+export * from "./Inspection/DeletedTickets";
+export * from "./Settings/Settings";
+export * from "./Whitelist/Whitelist";
+export * from "./TimeAndAttendence/TimeAndAttendence";
+export * from "./Accounting/Accounting";
+export * from "./Incaso/Incaso";
+export * from "./Warnings/Warnings";
+export * from "./Reporting/Reporting";
+export * from "./ClientView/ClientDashboard";
+export * from "./ClientView/ClientWhitelist";

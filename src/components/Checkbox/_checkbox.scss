@@ -1,0 +1,17 @@
+/*! purgecss start ignore */
+.checkbox {
+    &__checkmark {
+        border: 2px solid theme("colors.gray.silver");
+
+        svg {
+            display: none;
+        }
+    }
+
+    &__input[checked] ~ &__checkmark {
+        svg {
+            display: block;
+        }
+    }
+}
+/*! purgecss end ignore */

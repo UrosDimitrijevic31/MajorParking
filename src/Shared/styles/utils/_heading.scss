@@ -1,0 +1,7 @@
+.heading {
+    @apply text-gray-emperor capitalize text-2xl font-light mb-8;
+
+    &--main {
+        @apply text-gray-emperor;
+    }
+}

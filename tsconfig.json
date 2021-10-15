@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "sourceMap": true,
+        "baseUrl": "./",
+        "declaration": false,
+        "noImplicitAny": false,
+        "module": "esnext",
+        "target": "es5",
+        "resolveJsonModule": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "paths": {
+            "components": ["src/components/components.ts"],
+            "views": ["src/views/views.ts"],
+            "services": ["src/services"],
+            "context": ["src/context"],
+            "types": ["src/types"],
+            "helpers": ["src/Shared/helpers"],
+            "routes": ["src/routes/routes.ts"]
+        }
+    },
+    "exclude": ["./node_modules/**/*"]
+}

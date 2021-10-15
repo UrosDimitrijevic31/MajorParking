@@ -1,0 +1,68 @@
+/*! purgecss start ignore */
+.btn {
+    @apply text-white uppercase cursor-pointer text-center text-sm;
+    border-radius: 3px;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+        background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--primary {
+        @apply bg-husk;
+
+        &:hover {
+            box-shadow: 0 14px 26px -12px rgba(#baa35d, 0.42),
+                0 4px 23px 0px rgba(#000, 0.12),
+                0 8px 10px -5px rgba(#baa35d, 0.2);
+        }
+    }
+
+    &--secondary {
+        @apply bg-blue-sanJuan;
+
+        &:hover {
+            box-shadow: 0 14px 26px -12px rgba(#365672, 0.42),
+                0 4px 23px 0px rgba(#000, 0.12),
+                0 8px 10px -5px rgba(#365672, 0.2);
+        }
+    }
+
+    &--info {
+        @apply bg-blue-brightTurquoise;
+
+        &:hover {
+            box-shadow: 0 14px 26px -12px rgba(#00d3ee, 0.42),
+                0 4px 23px 0px rgba(#000, 0.12),
+                0 8px 10px -5px rgba(#00d3ee, 0.2);
+        }
+    }
+
+    &--success {
+        @apply bg-green-fern;
+
+        &:hover {
+            box-shadow: 0 14px 26px -12px rgba(#5cb860, 0.42),
+                0 4px 23px 0px rgba(#000, 0.12),
+                0 8px 10px -5px rgba(#5cb860, 0.2);
+        }
+    }
+
+    &--warning {
+        @apply bg-orange-treePoppy;
+
+        &:hover {
+            box-shadow: 0 14px 26px -12px rgba(#ffa21a, 0.42),
+                0 4px 23px 0px rgba(#000, 0.12),
+                0 8px 10px -5px rgba(#ffa21a, 0.2);
+        }
+    }
+
+    &--danger {
+        @apply bg-red-carnation;
+
+        &:hover {
+            box-shadow: 0 14px 26px -12px rgba(#f55a4e, 0.42),
+                0 4px 23px 0px rgba(#000, 0.12),
+                0 8px 10px -5px rgba(#f55a4e, 0.2);
+        }
+    }
+}
+/*! purgecss end ignore */

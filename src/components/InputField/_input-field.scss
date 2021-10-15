@@ -1,0 +1,78 @@
+.input-field {
+    &__label {
+        top: 0;
+        left: 0;
+        transform: translate(0, 0) scale(1);
+        transform-origin: top left;
+        transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms,
+            transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    }
+
+    &--has-value &__label,
+    &--focused &__label {
+        transform: translate(0, -16px) scale(0.75);
+    }
+
+    &__input {
+        &:hover,
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &:before {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "\00a0";
+        position: absolute;
+        transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+        pointer-events: none;
+    }
+
+    &:hover {
+        &:before {
+            border-bottom-width: 2px;
+        }
+    }
+
+    &:after {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        position: absolute;
+        transform: scaleX(0);
+        transition: transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+        border-bottom: 2px solid theme("colors.husk.default");
+        height: 2px;
+        pointer-events: none;
+    }
+
+    &--has-error:after {
+        border-bottom-color: theme("colors.red.500");
+    }
+
+    &--has-error:after,
+    &--focused:after {
+        transform: scaleX(1);
+    }
+
+    &__icon {
+        @apply text-gray-silverChalice;
+        right: 0;
+        top: 50%;
+        font-size: 1rem;
+        transform: translate(0, -50%);
+        transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    }
+
+    &--focused &__icon {
+        @apply text-seance;
+    }
+
+    &__error {
+        top: 100%;
+    }
+}

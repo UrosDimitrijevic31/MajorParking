@@ -1,0 +1,43 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: "Roboto";
+    background-color: theme("colors.gray.gallery");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input,
+button,
+select {
+    border: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.areaWidth{
+    width: 50%;
+    height: 600px;
+}

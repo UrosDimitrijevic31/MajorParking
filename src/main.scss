@@ -1,0 +1,27 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+// Shared styles
+@import "./Shared/styles/settings/settings";
+@import "./Shared/styles/base/base";
+@import "./Shared/styles/helpers/rem";
+@import "./Shared/styles/utils/utils";
+@import "./Shared/styles/components/card";
+@import "./Shared/styles/components/table";
+
+// Components
+@import "./components/Tabs/tabs";
+@import "./components/Table/table";
+@import "./components/Modal/modal";
+@import "./components/Button/button";
+@import "./components/Sidebar/sidebar";
+@import "./components/Checkbox/checkbox";
+@import "./components/InputField/input-field";
+@import "./components/UploadFile/upload-file";
+@import "./components/StyledCardHeader/styled-card-header";
+@import "./components/Tables/EmployeesTable/holidays-modal";
+
+// Views
+@import "./views/Login/login";
+@import "./views/Administration/administration";

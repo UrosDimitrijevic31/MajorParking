@@ -1,0 +1,54 @@
+.table {
+    &__container {
+        &::-webkit-scrollbar {
+            height: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: theme("colors.gray.silverChalice");
+            border-radius: 10px;
+        }
+    }
+}
+
+// .table {
+//     th{
+//         font-weight: bold;        
+//     }
+// }
+
+/* This is what we are focused on */
+.table-wrapper{
+    overflow-y: scroll;
+    height: 600px;
+  }
+  
+  .table-wrapper th{
+      position: sticky;
+      top: 0;
+  }
+  
+  /* A bit more styling to make it look better */
+  .table-wrapper{
+    // background: CadetBlue;
+  }
+  
+  table{
+    border-collapse: collapse;
+    width: 100%;
+    th{
+        font-weight: bold;    
+        color: white;    
+    }
+  }
+  
+  th{
+      background: #3e5d77;
+      
+      
+  }
+  
+  td,th{
+    padding: 10px;
+    text-align: center;
+  }
